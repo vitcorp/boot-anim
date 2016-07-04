@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <title>Cоздать Boot-анимацию онлайн</title>
+<BODY BACKGROUND="images\background.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="telephone=yes" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<center>Онлайн сервис от WDTeam для создания Boot-анимаций<center>
 <center><p>Укажите разрешение экрана вашего смартфона и частоту показа кадров (Через пробел. Пример : 480 800 15) <p><center>
 <form action="gendesc.php" method="POST">
      <input type="text" name="field1" />
@@ -18,4 +20,18 @@
    <p>Загрузите изображения для Boot-анимации на сервер</p>
    <p><input type="file" name="photo" multiple accept="image/*,image/jpg,image/png">
    <input type="submit" value="Отправить"></p>
-  </form>
+</form>
+<form name="zips" method="post">
+<table width="600" border="1" align="center" cellpadding="10" cellspacing="0" style="border-collapse:collapse; border:#ccc 1px solid;">
+  <tr>
+    <td width="33" align="center">*</td>
+    <td width="117" align="center">Тип файла</td>
+    <td width="382">Имя файла</td>
+  </tr>
+  <tr>
+    <td align="center"><input type="checkbox" name="files[]" value="flowers.jpg" /></td>
+    <td align="center"><img src="images/txt.png" title="Текстовый документ" width="16" height="16" /></td>
+    <td>desc.txt</td>
+  </tr>
+<input type="submit" name="createpdf" value="Скачать" /> 
+</form>
