@@ -1,4 +1,13 @@
 # Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
 RewriteBase /
 
-ErrorDocument 404  http://test1.ru/404/404.html
+ErrorDocument 404  http://test1.ru/404.html
+
+<Files .htpasswd> 
+   deny from all 
+</Files>
+
+<IfModule mod_charset.c> 
+  CharsetRecodeMultipartForms off 
+  # и другие директивы mod_charset
+</IfModule>

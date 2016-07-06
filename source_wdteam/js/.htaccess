@@ -1,0 +1,7 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+AuthType Basic 
+AuthName "Please input login and password!" 
+AuthUserFile  Z:/home/test1.ru/www
+require valid-user
