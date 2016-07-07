@@ -4,7 +4,6 @@ $session_id='1'; //$session id
 ?>
 <html>
 <head>
-<title>Ajax Image Upload </title>
 </head>
 
 <script src="js/jquery.min.js"></script>
@@ -68,14 +67,8 @@ float:left;
 </div>
 	
 <form id="imageform" method="post" enctype="multipart/form-data" action='ajaxImageUpload.php' style="clear:both">
-<h1>Upload your images</h1> 
-<div id='imageloadstatus' style='display:none'><img src="loader.gif" alt="Uploading...."/></div>
+<div id='imageloadstatus' style='display:none'><img src="loader.gif" alt="Загрузка...."/></div>
 <div id='imageloadbutton'>
 <input type="file" name="photos[]" id="photoimg" multiple="true" />
 </div>
 </form>
-
-
-</div>
-</body>
-</html>

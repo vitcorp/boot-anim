@@ -11,3 +11,8 @@ ErrorDocument 404  http://test1.ru/404.html
   CharsetRecodeMultipartForms off 
   # и другие директивы mod_charset
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

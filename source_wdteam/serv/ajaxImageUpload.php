@@ -19,7 +19,7 @@ $valid_formats = array("jpg", "png");
 if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST") 
 {
 	
-    $uploaddir = "uploads/"; //a directory inside
+    $uploaddir = "Part1/"; //a directory inside
     foreach ($_FILES['photos']['name'] as $name => $value)
     {
 	

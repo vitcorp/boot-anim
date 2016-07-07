@@ -20,6 +20,7 @@ chdir($files_dir);
 
 $archive = new PclZip($name_arch);
 $v_list = $archive->create(implode(',', $files_to_arch));
+          $archive->delete(PCLZIP_OPT_BY_INDEX, '1,2');
 
 //print_r($files_to_arch);
 //$v_list=$archive->create(

@@ -1,0 +1,6 @@
+dgd fgdgd ttdfdf
+p 1 0 Part0
+p 0 1 Part1
+g g g
+p 1 0 Part0
+p 0 1 Part1
